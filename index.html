@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Sistem Informasi Data Mahasiswa - Praktikum 1 - Kelas E</h1>
+        <p>kitab rongawi kuno adalah kitab sakral yang berasal dari zaman rongawi kuno</p>
+        <img src="ambawo.jpg" width="300" height="300">
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="#informasi">Informasi Aplikasi</a></li>
+            <li><a href="#daftar-mahasiswa">Daftar Mahasiswa</a></li>
+            <li><a href="#form-tambah">Tambah Mahasiswa Baru</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <main>
+        <section>
+            <h2>Informasi Sistem</h2>
+            <p>sejak zaman rongawi kuno manusia selalu berpegang pada kitab rongawi sebagai tujuan hidup mereka</p>
+            <article>
+                <h3>Kitab rongawi halaman 7</h3>
+                <p>berisi tiap tiap manusia harus memilikitujuan hidup jelas</p>
+            </article>
+        </section>
+    </main>
+    <hr>
+
+    <section id="daftar-mahasiswa">
+            <h2>Daftar Mahasigma Aktif</h2>
+            <p>Berikut adalah daftar mahasigma yang terdaftar di sistem saat ini:</p>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Foto</th>
+                        <th>NPM</th>
+                        <th>Amba Lengkap</th>
+                        <th>Amba Studi</th>
+                        <th>Ambangkatan</th>
+                        <th>Ambamail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="Lilith.jpeg" width="50" height="50"></td>
+                        <td>2415061111</td>
+                        <td>Farhan Naufal Azmi</td>
+                        <td>Teknik Informatika</td>
+                        <td>2024</td>
+                        <td>farhan@ngawi.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="Mei.jpg" width="50" height="50"></td>
+                        <td>2415061045</td>
+                        <td>Dihan Ahmad Al-Hasyir Sae</td>
+                        <td>Teknik Informatika</td>
+                        <td>2024</td>
+                        <td>dihan@ngawi.com</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img src="Sylvia.png" width="50" height="50"></td>
+                        <td>2415061999</td>
+                        <td>Sylvia Nerissa</td>
+                        <td>Teknik Informatika</td>
+                        <td>2024</td>
+                        <td>sylvia@ngawi.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+
+        <section id="form-tambah">
+            <h2>Tambah Mahasigma Baru</h2>
+            <p>Silakan isi formulir di bawah ini untuk mendaftarkan mahasigma baru</p>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Data Mahasigma</legend>
+
+                    <p>
+                        <label for="npm">Nomor Pokok Mahasigma (NPM):</label><br>
+                        <input type="text" id="npm" name="npm" placeholder="Contoh: 2315061111" required pattern="[0-9]{8,12}" title="NPM harus berupa angka 8-12 digit">
+                        <br><small>Pastikan NPM hanya berisi angka</small>
+                    </p>
+
+                    <p>
+                        <label for="nama">Amba Lengkap:</label><br>
+                        <input type="text" id="nama" name="nama" placeholder="Contoh: Amba ngawi" required minlength="3" maxlength="100">
+                        <br><small>Isi sesuai dengan KTM</small>
+                    </p>
+
+                    <p>
+                        <label for="amba_studi">Amba Studi:</label><br>
+                        <select id="amba_studi" name="amba_studi" required>
+                            <option value="">Pilih Amba Studi</option>
+                            <option value="Teknik Ambatika">Teknik Ambatika</option>
+                        </select>
+                        <br><small>Pilih ambarusan yang tersedia saat ini</small>
+                    </p>
+
+                    <p>
+                        <label for="angkatan">Tahun Ambangkatan:</label><br>
+                        <input type="number" id="angkatan" name="angkatan" placeholder="Contoh: 2024" required min="2018" max="2026">
+                        <br><small>Tahun masuk perjomokan</small>
+                    </p>
+
+                    <p>
+                        <label for="email">Alamat Ambamail:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Contoh: ambamail@ngawi.com" required>
+                        <br><small>Gunakan ambamail aktif</small>
+                    </p>
+                    
+                    <p>
+                        <button type="submit">Simpan Data Mahasigma</button>
+                        <button type="reset">Reset Ambalir</button>
+                    </p>
+                </fieldset>
+
+            </form>
+        </section>
+</body>
+</html>
